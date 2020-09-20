@@ -12,7 +12,7 @@ public class DateCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         Date date = new Date();
-        sender.sendMessage(Main.getPrefix() + "Es ist gerade " + ChatColor.GOLD + date.toString());
+        sender.sendMessage(Main.getPrefix() + "Es ist der " + ChatColor.GOLD + date.toString());
         return false;
     }
 }

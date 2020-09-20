@@ -1,6 +1,7 @@
 package de.hw100.tutorial;
 
 import de.hw100.tutorial.commands.DateCommand;
+import de.hw100.tutorial.listeners.ChatListener;
 import de.hw100.tutorial.listeners.JoinListener;
 import de.hw100.tutorial.listeners.QuitListener;
 import org.bukkit.Bukkit;
@@ -34,6 +35,7 @@ public final class Main extends JavaPlugin {
         PluginManager pluginManager = Bukkit.getPluginManager();
         pluginManager.registerEvents(new JoinListener(), this);
         pluginManager.registerEvents(new QuitListener(), this);
+        pluginManager.registerEvents(new ChatListener(), this);
 
     }
 
