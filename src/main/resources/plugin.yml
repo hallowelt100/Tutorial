@@ -1,0 +1,10 @@
+name: Tutorial
+version: ${project.version}
+main: de.hw100.tutorial.Main
+api-version: 1.16
+authors: [ HW100 ]
+description: Tutorial Plugin von HW100
+
+commands:
+  date:
+    description: Zeigt das Datum an
